@@ -54,7 +54,10 @@ function Navbar() {
     });
 
     return (
-        <nav className="navbar fixed-top py-3 navbar-expand-lg" id="nav">
+        <nav
+            className="navbar position-sticky top-0 start-0 py-3 navbar-expand-lg"
+            id="nav"
+        >
             {/* Scosh's logo is not included */}
 
             <div className="container-fluid px-md-5 px-3">

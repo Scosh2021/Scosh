@@ -1,20 +1,21 @@
 #Space {
     background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
-    height: 100vh; width: 100vw;
+    background-image: linear-gradient(147deg, #000000 0%, #06053a 74%);
+    height: 100vh;
+    width: 100vw;
     position: relative;
-  }
-  
-  #sky {
+}
+
+#sky {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
     margin: 0;
     padding: 0;
-  }
-  
-  #shootingstars {
+}
+
+#shootingstars {
     margin: 0;
     padding: 0;
     width: 150vh;
@@ -22,10 +23,10 @@
     position: relative;
     overflow: hidden;
     transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
-      rotate(120deg);
-  }
-  
-  .wish {
+        rotate(120deg);
+}
+
+.wish {
     height: 2px;
     top: 300px;
     width: 100px;
@@ -37,43 +38,53 @@
     background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
     filter: drop-shadow(0 0 6px white);
     overflow: hidden;
-  }
+}
 
-  .The-SVG{
-    height: 100%; width: 100%;
+.The-SVG {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 10;
-  }
-
-  @media screen and (max-width: 425px) {
-    #Space{
-        height: 70vh; width: auto;
-        overflow:hidden;
-    }
-    .The-SVG{
-      top: 28.5%; 
-    }
 }
-  
+
 @media screen and (max-width: 769px) {
-  #Space{
-      height: 100vh; width: auto;
-      overflow:hidden;
-  }
-  .The-SVG{
-    top: 0%; left: 0; 
-    height: 150vh; width: 100vw;
-  }
+    #Space {
+        height: 70vh;
+        width: auto;
+        overflow: hidden;
+    }
+    .The-SVG {
+        top: 0%;
+        left: 0;
+        height: 150vh;
+        width: 100vw;
+    }
 }
 
-@media screen and (min-width: 769px) {
-  #Space{
-      height: 100vh; width: 100%;
-      overflow:hidden;
-  }
-  .The-SVG{
-    top: 11.5%; left: 2%; 
-    height: 100%; width: 100%;
-  }
+@media screen and (max-width: 425px) {
+    #Space {
+        height: 70vh;
+        width: auto;
+        overflow: hidden;
+    }
+    .The-SVG {
+        top: 28.5%;
+    }
 }
+
+/* 
+@media screen and (min-width: 769px) {
+    #Space {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .The-SVG {
+        top: 11.5%;
+        left: 2%;
+        height: 100%;
+        width: 100%;
+    }
+} */

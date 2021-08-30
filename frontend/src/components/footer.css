@@ -1,26 +1,32 @@
-.footer{
-    background-color: #06053A; width: 100%;
+.footer {
+    background-color: #06053a;
+    width: 100%;
     overflow: hidden;
 }
-.cr21{
+.cr21 {
     transform-origin: left;
     transform: translateY(90px) rotate(-90deg);
-    font-size: 14px; 
+    font-size: 14px;
 }
-.scosh-dashed{
-    margin-top: auto; margin-bottom: auto;
+.scosh-dashed {
+    margin-top: auto;
+    margin-bottom: auto;
 }
-.line{
-    margin-top: 13px; margin-bottom: 18.5px; margin-right: -27.5px; margin-left: 25px;
+.line {
+    margin-top: 13px;
+    margin-bottom: 18.5px;
+    margin-right: -27.5px;
+    margin-left: 25px;
     width: 200px;
-    background-color: #f3cc01;  
-    height: 1px;  
+    background-color: #f3cc01;
+    height: 1px;
     opacity: 0.8;
     mix-blend-mode: difference;
 }
-.vertical-line{
+.vertical-line {
     width: 80px;
-    margin-top: auto; margin-bottom: 25px;
+    margin-top: auto;
+    margin-bottom: 25px;
     margin-left: 1%;
     justify-content: center;
     background-color: #ffffff;
@@ -28,36 +34,51 @@
     border: 1px solid #ffffff;
     transform: rotate(90deg);
 }
-.fa-map-marker-alt{
+.fa-map-marker-alt {
     margin-top: 3px;
 }
-.location{
+.location {
     font-size: 18px;
     font-weight: 400;
     line-height: 21.6px;
 }
-.row{
-    display: block;
-    margin-left: auto; margin-right: auto;
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-.link, .link:hover{
-    text-decoration: none;
-    color: white;
+.link,
+.link:hover {
+    margin: 2px;
 }
 
 @media screen and (max-width: 768px) {
-    .footer{
-        height: 170px;
+    .footer {
+        height: fit-content;
     }
-    .vertical-line{
+    .vertical-line {
         visibility: hidden;
     }
-    .d-flex{
-        margin-top: 5%; margin-bottom: 1%; margin-left: 12%;
+    .d-flex {
+        margin-top: 5%;
+        margin-bottom: 1%;
+        margin-left: 12%;
     }
-    .cr21{
+    .location {
+        font-size: 15px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .social-links {
+        padding-right: 50px;
+    }
+    .cr21 {
         text-align: start;
     }
-    .scosh-dashed{
+    .scosh-dashed {
         margin-left: 18%;
-    }}
+    }
+}

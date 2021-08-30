@@ -35,8 +35,13 @@ const Contact = () => {
             <div className="contact_otherMethod">
                 <p>OR</p>
                 <p>
-                    Contact Us at: <img src={linkedin} alt="linked in" />{" "}
-                    <img src={gmail} alt="gmail" />
+                    Contact Us at:{" "}
+                    <a href=" https://www.linkedin.com/company/the-society-for-cultivation-of-science-and-humanities/mycompany/?viewAsMember=true">
+                        <img src={linkedin} alt="linked in" />
+                    </a>{" "}
+                    <a href="mailto:svnit.scosh@gmail.com">
+                        <img src={gmail} alt="gmail" />
+                    </a>
                 </p>
             </div>
         </div>
