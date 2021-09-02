@@ -6,7 +6,7 @@ export default function EventCard(props) {
     return (
         <div className={EventCardCSS.root}>
             <div className={EventCardCSS.card}>
-                <img src={img ?? "https://picsum.photos/400"} alt="event" />
+                <img style={{width:'30vh'}} src={img ?? "https://picsum.photos/400"} alt="event" />
                 <div className={EventCardCSS.cardContent}>
                     <div>
                         <h1>{title ?? "Title"}</h1>

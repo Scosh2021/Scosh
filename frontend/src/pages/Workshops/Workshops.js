@@ -28,7 +28,7 @@ export default function Workshops() {
                         <EventCard
                             title={workshop.name}
                             body={workshop.description}
-                            img={workshop.image}
+                            img={workshop.image.url}
                             registerLink={workshop.register}
                         />
                     ))}

@@ -41,6 +41,7 @@
     padding: 5px;
     background-color: white;
     border-radius: 0px 12px 12px 0px;
+    overflow: hidden;
 }
 .card_title {
     font-family: "Exo 2", sans-serif;

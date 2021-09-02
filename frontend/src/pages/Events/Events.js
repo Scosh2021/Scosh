@@ -28,7 +28,7 @@ export default function Events() {
                         <EventCard
                             title={event.name}
                             body={event.description}
-                            img={event.image}
+                            img={event.image.url}
                             registerLink={event.register}
                         />
                     ))}
