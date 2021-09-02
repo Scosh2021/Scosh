@@ -9,6 +9,7 @@ import ScoshDetails from "./pages/ScoshDetails";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/navbar";
 import Blogs from "./pages/Blogs/Blogs";
+import BlogPage from "./pages/BlogPage/BlogPage";
 import Footer from "./components/footer";
 
 const App = () => {
@@ -29,6 +30,9 @@ const App = () => {
             </Route>
             <Route path="/blogs" exact={true}>
                 <Blogs />
+            </Route>
+            <Route path="/blog/:id" exact={true}>
+                <BlogPage />
             </Route>
             <Footer />
         </BrowserRouter>

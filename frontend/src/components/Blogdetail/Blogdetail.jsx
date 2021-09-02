@@ -42,6 +42,7 @@ const Blogdetail = () => {
                         <Card
                             size="large"
                             clr={carddetails[0].clr}
+                            blogId={blogData[0]._id}
                             title={blogData[0].title}
                             body={blogData[0].content}
                             image={blogData[0].images.length !== 0 ? blogData[0].images[0].url : "https://picsum.photos/200"}
@@ -52,6 +53,7 @@ const Blogdetail = () => {
                             <Card
                                 size={carddetails[0].size}
                                 clr={carddetails[0].clr}
+                                blogId={blogData[1]._id}
                                 title={blogData[1].title}
                                 body={blogData[1].content}
                                 image={blogData[1].images.length !== 0 ? blogData[1].images[0].url : "https://picsum.photos/200"}
@@ -68,6 +70,7 @@ const Blogdetail = () => {
                             <Card
                                 size={carddetails[0].size}
                                 clr={carddetails[0].clr}
+                                blogId={blogData[3]._id}
                                 title={blogData[3].title}
                                 body={blogData[3].content}
                                 image={blogData[3].images.length !== 0 ? blogData[3].images[0].url : "https://picsum.photos/200"}
@@ -75,6 +78,7 @@ const Blogdetail = () => {
                             <Card
                                 size={carddetails[0].size}
                                 clr="yellow"
+                                blogId={blogData[4]._id}
                                 title={blogData[4].title}
                                 body={blogData[4].content}
                                 image={blogData[4].images.length !== 0 ? blogData[4].images[0].url : "https://picsum.photos/200"}

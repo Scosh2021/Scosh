@@ -43,6 +43,7 @@ const Blogs = () => {
                         { blogsData[2*i] && (<Card
                             size={carddetails[0].size}
                             clr={carddetails[0].clr}
+                            blogId={blogsData[2*i]._id}
                             title={blogsData[2*i].title}
                             body={blogsData[2*i].content}
                             image={blogsData[2*i].images.length !== 0 ? blogsData[2*i].images[0].url : "https://picsum.photos/200"}
@@ -50,6 +51,7 @@ const Blogs = () => {
                         { blogsData[2*i+1] && (<Card
                             size={carddetails[0].size}
                             clr={carddetails[0].clr}
+                            blogId={blogsData[2*i+1]._id}
                             title={blogsData[2*i+1].title}
                             body={blogsData[2*i+1].content}
                             image={blogsData[2*i+1].images.length !== 0 ? blogsData[2*i+1].images[0].url : "https://picsum.photos/200"}

@@ -24,6 +24,7 @@ const Eventdetail = () => {
             body: "Body",
             size: "small",
             clr: "pink",
+            tempLink: null
         },
     ];
     return (
@@ -39,14 +40,16 @@ const Eventdetail = () => {
                             size={carddetails[0].size}
                             clr={carddetails[0].clr}
                             title={blogData[0] ? blogData[0].title : carddetails[0].title}
-                            body={carddetails[0].body}
+                            body={blogData[0] ? blogData[0].body : carddetails[0].body}
+                            eventLink={blogData[0] ? blogData[0].register : "https://www.google.com"}
                             image="https://picsum.photos/200"
                         />
                         <Card
                             size={carddetails[0].size}
                             clr="yellow"
                             title={blogData[1] ? blogData[1].title : carddetails[0].title}
-                            body={carddetails[0].body}
+                            body={blogData[1] ? blogData[1].body : carddetails[0].body}
+                            eventLink={blogData[1] ? blogData[1].register : "https://www.google.com"}
                             image="https://picsum.photos/200"
                         />
                     </div>
@@ -55,14 +58,16 @@ const Eventdetail = () => {
                             size={carddetails[0].size}
                             clr={carddetails[0].clr}
                             title={blogData[2] ? blogData[2].title : carddetails[0].title}
-                            body={carddetails[0].body}
+                            body={blogData[2] ? blogData[2].body : carddetails[0].body}
+                            eventLink={blogData[2] ? blogData[2].register : "https://www.google.com"}
                             image="https://picsum.photos/200"
                         />
                         <Card
                             size={carddetails[0].size}
                             clr="yellow"
                             title={blogData[3] ? blogData[3].title : carddetails[0].title}
-                            body={carddetails[0].body}
+                            body={blogData[3] ? blogData[3].body : carddetails[0].body}
+                            eventLink={blogData[3] ? blogData[3].register : "https://www.google.com"}
                             image="https://picsum.photos/200"
                         />
                     </div>
