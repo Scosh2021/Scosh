@@ -1,13 +1,16 @@
 .root {
     min-height: 100vh;
-    background-color: #E5E5E5;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #e5e5e5;
     padding-top: 10rem;
-    color: #06053A;
+    color: #06053a;
     font-family: "Inter", sans-serif;
 }
 
 .container {
     display: flex;
+    justify-content: center;
     margin: auto 10rem;
     min-height: 80vh;
 }
@@ -15,12 +18,12 @@
 .main {
     flex: 1;
     padding: 0 2rem;
-    border-right: 2px solid #C4C4C4;
+    border-right: 2px solid #c4c4c4;
 }
 
 .main > h1 {
     font-size: 48px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: bold;
 }
 
@@ -34,10 +37,13 @@
     object-fit: cover;
     padding: 1rem 0;
 }
-
+.blogdata > p > img {
+    max-width: 90%;
+    height: fit-content;
+}
 .sidepanel {
     margin-left: 2rem;
-    width: 20vw;   
+    width: 20vw;
 }
 
 .sideCard {
@@ -70,6 +76,6 @@
     .main {
         padding-bottom: 2rem;
         border-right: none;
-        border-bottom: 2px solid #C4C4C4;
+        border-bottom: 2px solid #c4c4c4;
     }
 }

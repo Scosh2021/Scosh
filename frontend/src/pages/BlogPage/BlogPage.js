@@ -37,6 +37,7 @@ export default function BlogPage() {
                         />
                         {/* <p id="content">{data.content}</p> */}
                         <div
+                            className={BlogPageCSS.blogdata}
                             dangerouslySetInnerHTML={{ __html: data.content }}
                         />
                     </div>
